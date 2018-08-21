@@ -4,6 +4,7 @@
   "description": "multiplayer game with login",
   "main": "index.js",
   "scripts": {
+    "bundle": "webpack",
     "webpack": "webpack-dev-server --mode development",
     "test": "test"
   },
