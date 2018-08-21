@@ -1,0 +1,19 @@
+{
+  "name": "soloproject2",
+  "version": "1.0.0",
+  "description": "multiplayer game with login",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregDoming/multiPlayerGame.git"
+  },
+  "author": "Greg Domingue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregDoming/multiPlayerGame/issues"
+  },
+  "homepage": "https://github.com/GregDoming/multiPlayerGame#readme"
+}
