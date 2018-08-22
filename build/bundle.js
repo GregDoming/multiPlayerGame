@@ -22,7 +22,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "74ee9f4c285a0f84c219";
+/******/ 	var hotCurrentHash = "f46b1c73a00285e58000";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -772,18 +772,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"react-dom\");\n\nvar _App = __webpack_require__(/*! ./client/App */ \"./client/App.jsx\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//const express = require('express');\n//const nodeExternals = require('webpack-node-externals');\n//const bodyParser = require('body-parser');\n// import React from \"react\";\n// import ReactDOM from \"react-dom\";\nvar mongoose = __webpack_require__(/*! mongoose */ \"mongoose\");\n//const server = require('http').Server(app);\n\n\n//require('dotenv').config();\nmongoose.connect(process.env.MONGO_URL);\n\n// app.get('/', function(req, res){\n\n// })\n\n\nReactDOM.render(React.createElement(_App2.default, null), document.getElementById(\"content\"));\n\n//# sourceURL=webpack:///./index.js?");
-
-/***/ }),
-
-/***/ "mongoose":
-/*!***************************!*\
-  !*** external "mongoose" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"mongoose\");\n\n//# sourceURL=webpack:///external_%22mongoose%22?");
+eval("\n\nvar _App = __webpack_require__(/*! ./client/App */ \"./client/App.jsx\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//const express = require('express');\n//const nodeExternals = require('webpack-node-externals');\n//const bodyParser = require('body-parser');\n\n//const server = require('http').Server(app);\n\n\n// app.get('/', function(req, res){\n\n// })\n\n\nReactDOM.render(React.createElement(_App2.default, null), document.getElementById(\"content\")); // import React from \"react\";\n// import ReactDOM from \"react-dom\";\n\n//require('dotenv').config();\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
