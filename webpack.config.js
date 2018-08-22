@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 //node externals stops nod from bundling on the back end
-const nodeExternals = require('webpack-node-externals');
+
 
 module.exports = {
   entry: "./index.js",
@@ -13,7 +13,7 @@ module.exports = {
     dns: 'empty'
   },
   target: 'node',
-  externals: [nodeExternals()],
+  //externals: [nodeExternals()],
   module: {
     rules: [
       {
@@ -37,8 +37,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "public/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/build/",
+    port: 5000,
+    publicPath: "/build/",
     hotOnly: true
   },
   plugins: [ new webpack.HotModuleReplacementPlugin() ]
