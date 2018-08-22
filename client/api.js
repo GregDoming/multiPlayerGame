@@ -1,5 +1,12 @@
-function subscribeToTimer(interval, cb) {
+// import io from 'socket.io-client';
+// const socket = io('http://localhost:8000');
 
-}
 
-export { subscribeToTimer }
+
+// function subscribeToTimer(interval, cb) {
+//     socket.on('timer', timestamp => cb(null, timestamp));
+//     socket.emit('subscribeToTimer', 1000)
+
+// }
+
+// export { subscribeToTimer }

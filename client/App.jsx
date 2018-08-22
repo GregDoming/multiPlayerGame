@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+//import { subcribeToTimer } from './api';
 //import ArrowPosition from './ArrowPosition';
 //import keydown from 'react-keydown';
 //import { render } from 'react-dom';
@@ -15,6 +16,7 @@ class App extends Component {
       down: false,
       lefts: false,
       rights: false,
+      timestamp: 'no timestamp yet',
       arrowDirection: 'No Direction'
     };
     // this.toggle = this.toggle.bind(this);
@@ -23,6 +25,11 @@ class App extends Component {
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleKeyUp = this.handleKeyUp.bind(this);
   }
+
+  // subscribeToTimer(err, timestamp) {
+  //   this.setState({timestamp})
+  // }
+  
 
 
   handleKeyDown(event) {
