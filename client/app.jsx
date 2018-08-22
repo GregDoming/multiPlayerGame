@@ -1,4 +1,5 @@
-import React, { Component} from "react";
+import React, { Component} from 'react';
+import ArrowPosition from './ArrowPosition.jsx'
 //import { render } from 'react-dom';
 //import "./App.css";
 
@@ -6,17 +7,47 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.up = this.up.bind(this);
-    this.down = this.down.bind(this);
-    this.lefts = this.lefts.bind(this);
-    this.rights = this.rights.bind(this);
-
     this.state = {
       up: false,
       down: false,
       left: false,
       right: false
-    }
+    };
+  }
+
+  render() {
+    let arrowDirection = 'no key pressed'
+
+    if (this.state.up === true) {
+      arrowDirection = 'Up';
+
+      <ArrowPosition up={this.state.up}>{arrowDirection}</ArrowPosition>
+    };
+
+    if (this.state.down === true) {
+      arrowDirection = 'Down';
+
+      <ArrowPosition up={this.state.down}>{arrowDirection}</ArrowPosition>
+    };
+
+    if (this.state.left === true) {
+      arrowDirection = 'Left';
+
+      <ArrowPosition up={this.state.lefts}>{arrowDirection}</ArrowPosition>
+    };
+
+    if (this.state.right === true) {
+      arrowDirection = 'Right';
+
+      <ArrowPosition up={this.state.rights}>{arrowDirection}</ArrowPosition>
+    };
+
+    return (
+      <div className="app">
+        <h1>Arrow Direction</h1>
+        <main className="arrowDirection">{arrowDirection}</main>
+      </div>
+    )
   }
 }
 
