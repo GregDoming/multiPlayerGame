@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import ArrowPosition from './ArrowPosition';
+//import ArrowPosition from './ArrowPosition';
 //import keydown from 'react-keydown';
 //import { render } from 'react-dom';
 //import "./App.css";
@@ -37,17 +37,16 @@ class App extends Component {
 
     }
 
-    handleKeyUp(event) {
+  handleKeyUp(event) {
 
-      if (event.keyCode === 37) this.setState({arrowDirection: 'No Input' });
+    if (event.keyCode === 37) this.setState({arrowDirection: 'No Input' });
 
-      if (event.keyCode === 38) this.setState({arrowDirection: 'No Input' });
+    if (event.keyCode === 38) this.setState({arrowDirection: 'No Input' });
   
-      if (event.keyCode === 39) this.setState({arrowDirection: 'No Input' });
+    if (event.keyCode === 39) this.setState({arrowDirection: 'No Input' });
   
-      if (event.keyCode === 40) this.setState({arrowDirection: 'No Input' });
-  
-      
+    if (event.keyCode === 40) this.setState({arrowDirection: 'No Input' });
+   
     }
   
 
@@ -147,18 +146,18 @@ export default App
 
     //   return <div up={this.state.up}>{arrowDirection}</div>
     // } else if (this.state.down === true) {
-    //   arrowDirection = 'Down';
+    //   arrowDrequire('dotenv').config();
 
-    //   return <div down={this.state.down} toggle={this.toggle}>{arrowDirection}</div>
-    // } else if (this.state.lefts === true) {
-    //   arrowDirection = 'Left';
+    //   returnrequire('dotenv').config();toggle={this.toggle}>{arrowDirection}</div>
+    // } else irequire('dotenv').config(); {
+    //   arrowDrequire('dotenv').config();
 
-    //   return <div left={this.state.lefts} toggle={this.toggle}>{arrowDirection}</div>
-    // } else if (this.state.rights === true) {
-    //   arrowDirection = 'Right';
+    //   returnrequire('dotenv').config(); toggle={this.toggle}>{arrowDirection}</div>
+    // } else irequire('dotenv').config();) {
+    //   arrowDrequire('dotenv').config();
 
-    //   return <div right={this.state.rights} toggle={this.toggle}>{arrowDirection}</div>
-    // } else {
+    //   returnrequire('dotenv').config();s} toggle={this.toggle}>{arrowDirection}</div>
+    // } else {require('dotenv').config();
     //   arrowDirection = 'no key pressed';
       
     // }
