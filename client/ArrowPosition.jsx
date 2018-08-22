@@ -29,7 +29,7 @@ class ArrowDirection extends Component {
     render() {
 
       return (
-        <div className="arrowDirection" onKeyDown={this.upArrowPressedDown}></div>
+        <div className="arrowDirection" onKeyDown={this.arrowPressedDown} onKeyUp={this.arrowUp} ></div>
     )
   }
 }
