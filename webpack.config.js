@@ -8,20 +8,18 @@ module.exports = {
   mode: "development",
   node: {
     fs: 'empty',
-    net: 'empty',
-    tls: 'empty',
-    dns: 'empty'
+    dns: 'empty',
   },
-  target: 'node',
-  //externals: [nodeExternals()],
+  //Webpack may assume that the bundle will be running in a node-like environment, 
+  //where globals like  global and require are provided by the environment ()maybe causes errors
+
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
-        //query: {presets: ['react']}
-        options: { presets: ['env'] }
+        options: { presets: ['env', 'react'] }
       },
       {
         test: /\.css$/,
@@ -30,6 +28,7 @@ module.exports = {
     ]
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },
+
   output: {
     path: path.resolve(__dirname, "build/"),
     publicPath: "/build/",

@@ -1,5 +1,9 @@
+// const socket = window.io();
+import io from 'socket.io-client';
+//let socket = io(`http://localhost:8000`);
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+//import { numberOfUsers } from './api.jsx'
 //import { subcribeToTimer } from './api';
 //import ArrowPosition from './ArrowPosition';
 //import keydown from 'react-keydown';
@@ -17,7 +21,8 @@ class App extends Component {
       lefts: false,
       rights: false,
       timestamp: 'no timestamp yet',
-      arrowDirection: 'No Direction'
+      arrowDirection: 'No Direction',
+      users: 0
     };
     // this.toggle = this.toggle.bind(this);
     // this.arrowRealeased = this.arrowReleased.bind(this);
@@ -30,6 +35,9 @@ class App extends Component {
   //   this.setState({timestamp})
   // }
   
+  // numberOfUsers(connection) {
+  //   this.setState(users ++)
+  // }
 
 
   handleKeyDown(event) {
