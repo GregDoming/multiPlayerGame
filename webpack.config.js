@@ -12,6 +12,7 @@ module.exports = {
   },
   //Webpack may assume that the bundle will be running in a node-like environment, 
   //where globals like  global and require are provided by the environment ()maybe causes errors
+  //target: 'node',
 
   module: {
     rules: [

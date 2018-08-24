@@ -21,17 +21,23 @@ app.get('/', function (req, res) {
     res.sendFile(path.resolve(__dirname + '/public/index.html'))
 })
 
-io.on('connection', sockets)
+io.on('connection', userConnected)
+io.on('disconnect', userDisconnected)
 
-function sockets(socket){
-    console.log('user connected');
+function userConnected() {
+    console.log('Connected')
     io.emit('user connected')
-    socket.on('disconnect', function(){
-        console.log('user disonnected')
-    })
-    socket.on('disconnect', function(){
-        console.log('user disconnected')
-    })
+}
+
+function userDisconnected() {
+    console.log('Disconnected')
+    io.emit('user disconnected')
+
+}
+
+function numberActiveConnections(connection) {
+    socket.on
+
 }
 
 server.listen(3000, function(){

@@ -1,6 +1,6 @@
 // const socket = window.io();
 import io from 'socket.io-client';
-//let socket = io(`http://localhost:8000`);
+let socket = io(`http://localhost:3000`);
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 //import { numberOfUsers } from './api.jsx'
@@ -34,7 +34,9 @@ class App extends Component {
   // subscribeToTimer(err, timestamp) {
   //   this.setState({timestamp})
   // }
-  
+  numberActiveConnections(connection) {
+    socket.on('')
+  }
   // numberOfUsers(connection) {
   //   this.setState(users ++)
   // }
